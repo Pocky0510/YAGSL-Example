@@ -94,7 +94,7 @@ SwerveDrive swerveDrive = new SwerveParser(directory).createSwerveDrive(maximumS
 
 ### My Robot Spins around uncontrollably during autonomous or when attempting to set the heading!
 
-* Invert the gyro scope.
+* Invert the  scope.
 * Invert the drive motors for every module. (If front and back become reversed when turning)
 
 ### Angle motors are erratic.

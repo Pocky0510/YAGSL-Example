@@ -61,6 +61,8 @@ import swervelib.telemetry.SwerveDriveTelemetry.TelemetryVerbosity;
 public class SwerveSubsystem extends SubsystemBase
 {
 
+  
+
   /**
    * Swerve drive object.
    */
@@ -561,7 +563,7 @@ public class SwerveSubsystem extends SubsystemBase
   }
 
   /**
-   * Resets the gyro angle to zero and resets odometry to the same position, but facing toward 0.
+   * Resets the  angle to zero and resets odometry to the same position, but facing toward 0.
    */
   public void zeroGyro()
   {
@@ -739,19 +741,19 @@ public class SwerveSubsystem extends SubsystemBase
 
   public Photonvision1 Photonvision1 = new Photonvision1();
 
-  public void forward(){
-    swerveDrive.drive(new Translation2d(0, 0.5), 0, false, false);
-  }
-
-  public void backward(){
+  public void right(){
     swerveDrive.drive(new Translation2d(0, -0.5), 0, false, false);
   }
 
-  public void right(){
+  public void left(){
+    swerveDrive.drive(new Translation2d(0, 0.5), 0, false, false);
+  }
+
+  public void forward(){
     swerveDrive.drive(new Translation2d(0.5, 0), 0, false, false);
   }
 
-  public void left(){
+  public void backward(){
     swerveDrive.drive(new Translation2d(-0.5, 0), 0, false, false);
   }
 

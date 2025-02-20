@@ -58,6 +58,7 @@ public class Photonvision1 extends SubsystemBase {
 
     @Override
     public void periodic() {
+        
         updateTarget();
         
 }
